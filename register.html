@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | EliteFit</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="auth-page">
+    <div class="auth-card">
+      <h2>Create Account</h2>
+      <p>Start managing your gym operations</p>
+      <form id="registerForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <select id="role">
+          <option value="member">Gym Member</option>
+          <option value="coach">Coach</option>
+        </select>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="text" id="address" placeholder="Address" required />
+        <select id="goal">
+          <option value="weight gain">Weight Gain</option>
+          <option value="weight loss">Weight Loss</option>
+          <option value="general">General Fitness</option>
+        </select>
+        <select id="package">
+          <option value="12 month">12 Month - 5500</option>
+          <option value="6 month">6 Month - 2500</option>
+          <option value="1 month">1 Month - 500</option>
+        </select>
+        <select id="coachRequested">
+          <option value="false">No Coach</option>
+          <option value="true">Yes Coach + 500</option>
+        </select>
+        <button class="btn primary" type="submit">Save</button>
+      </form>
+      <p class="tiny">Already have an account? <a href="/login">Login</a></p>
+    </div>
+
+    <script src="./js/auth.js"></script>
+  </body>
+</html>

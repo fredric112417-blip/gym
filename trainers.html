@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trainers | EliteFit</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <h2>EliteFit</h2>
+        <nav>
+          <a href="/dashboard">Dashboard</a>
+          <a href="/members">Members</a>
+          <a href="/trainers">Trainers</a>
+          <a href="/payments">Payments</a>
+          <a href="/attendance">Attendance</a>
+          <a href="/" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <h1>Trainer Management</h1>
+          <p>Track coaches and specializations.</p>
+        </header>
+        <section class="card">
+          <h3>Add Trainer</h3>
+          <form id="trainerForm" class="grid-form">
+            <input type="text" id="trainerName" placeholder="Name" required />
+            <input type="text" id="specialty" placeholder="Specialty" required />
+            <input type="email" id="trainerEmail" placeholder="Email" required />
+            <input type="text" id="trainerPhone" placeholder="Phone" required />
+            <input type="number" id="experience" placeholder="Experience (Years)" required />
+            <button class="btn primary" type="submit">Save</button>
+          </form>
+        </section>
+        <section class="card">
+          <div id="trainerList" class="list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

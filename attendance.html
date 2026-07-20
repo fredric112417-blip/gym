@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance | EliteFit</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <h2>EliteFit</h2>
+        <nav>
+          <a href="/dashboard">Dashboard</a>
+          <a href="/members">Members</a>
+          <a href="/trainers">Trainers</a>
+          <a href="/payments">Payments</a>
+          <a href="/attendance">Attendance</a>
+          <a href="/" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <h1>Attendance Tracking</h1>
+          <p>Log daily check-ins and attendance status.</p>
+        </header>
+        <section class="card">
+          <h3>Lookup Member</h3>
+          <form id="memberLookupForm" class="grid-form">
+            <input type="text" id="memberLookupId" placeholder="Enter member ID" required />
+            <button class="btn primary" type="submit">View Member</button>
+          </form>
+          <div id="memberDetails" class="detail-box"></div>
+        </section>
+        <section class="card">
+          <h3>Mark Attendance</h3>
+          <form id="attendanceForm" class="grid-form">
+            <input type="text" id="attendanceMember" placeholder="Member Name" required />
+            <input type="text" id="attendancePersonId" placeholder="Member ID" required />
+            <input type="date" id="attendanceDate" required />
+            <input type="time" id="checkInTime" required />
+            <input type="time" id="checkOutTime" required />
+            <select id="attendanceStatus">
+              <option value="Checked In">Checked In</option>
+              <option value="Checked Out">Checked Out</option>
+            </select>
+            <button class="btn primary" type="submit">Save</button>
+          </form>
+        </section>
+        <section class="card">
+          <h3>Today’s Attendance</h3>
+          <div id="attendanceList" class="list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

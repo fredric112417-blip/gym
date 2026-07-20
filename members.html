@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Members | EliteFit</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <h2>EliteFit</h2>
+        <nav>
+          <a href="/dashboard">Dashboard</a>
+          <a href="/members">Members</a>
+          <a href="/trainers">Trainers</a>
+          <a href="/payments">Payments</a>
+          <a href="/attendance">Attendance</a>
+          <a href="/" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <h1>Member Management</h1>
+          <p>Handle memberships, plans, and status.</p>
+        </header>
+        <section class="card">
+          <h3>Add Member</h3>
+          <form id="memberForm" class="grid-form">
+            <input type="text" id="fullName" placeholder="Full Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="text" id="contact" placeholder="Contact Number" required />
+            <select id="membershipType">
+              <option value="Basic">Basic</option>
+              <option value="Premium">Premium</option>
+              <option value="VIP">VIP</option>
+            </select>
+            <input type="date" id="startDate" required />
+            <select id="status">
+              <option>Active</option>
+              <option>Paused</option>
+              <option>Inactive</option>
+            </select>
+            <button class="btn primary" type="submit">Save</button>
+          </form>
+        </section>
+        <section class="card">
+          <input type="text" id="memberSearch" placeholder="Search members..." />
+          <div id="memberList" class="list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

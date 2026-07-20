@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | EliteFit</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="auth-page">
+    <div class="auth-card">
+      <h2>Welcome Back</h2>
+      <p>Sign in to your gym management console</p>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button class="btn primary" type="submit">Login</button>
+      </form>
+      <p class="tiny">No account? <a href="/register">Create one</a></p>
+    </div>
+
+    <script src="./js/auth.js"></script>
+  </body>
+</html>

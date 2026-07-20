@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | EliteFit</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <h2>EliteFit</h2>
+        <nav>
+          <a href="/dashboard">Dashboard</a>
+          <a href="/members">Members</a>
+          <a href="/trainers">Trainers</a>
+          <a href="/payments">Payments</a>
+          <a href="/attendance">Attendance</a>
+          <a href="/" id="logoutBtn">Logout</a>
+        </nav>
+      </aside>
+      <main class="content">
+        <header class="topbar">
+          <h1>Admin Dashboard</h1>
+          <p>Manage your gym operations with ease.</p>
+        </header>
+        <section class="stats-grid" id="dashboardStats"></section>
+        <section class="card">
+          <h3>Monthly Overview</h3>
+          <p class="muted">Track advancing growth across memberships, trainers, payments, and attendance.</p>
+        </section>
+        <section class="card">
+          <h3>Live Attendance</h3>
+          <div id="liveAttendanceList" class="list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
